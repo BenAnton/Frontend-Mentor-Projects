@@ -1,0 +1,149 @@
+body {
+  background-color: #f4e9e3;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 60%;
+  margin-inline: auto;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.imgDiv {
+  background-image: url(./images/image-product-mobile.jpg);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 4/3;
+  border-radius: 15px 15px 0 0;
+  margin-inline: auto;
+}
+
+button {
+  width: 90%;
+  height: 50px;
+  margin-inline: auto;
+  display: block;
+  color: white;
+  background-color: #3d8269;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #1a4031;
+}
+
+.priceOne {
+  color: #3d8269;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: Fraunces;
+  margin-left: 25px;
+}
+
+.bulkText {
+  font-family: Montserrat;
+  color: #8b8d97;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+  margin-inline: 25px;
+  line-height: 25px;
+}
+
+.priceTwo {
+  text-decoration: line-through;
+  color: #8b8d97;
+}
+
+.horiz-div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-block: -20px;
+}
+
+h3 {
+  font-family: Montserrat;
+  color: #8b8d97;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-size: 12px;
+  margin-inline: 25px;
+}
+h1 {
+  font-family: Fraunces;
+  margin-inline: 25px;
+  margin-block: 25px;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: #f4e9e3;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 95%;
+    display: block;
+    margin-inline: auto;
+    padding-bottom: 20px;
+    margin-top: 25px;
+  }
+
+  .imgDiv {
+    background-image: url(./images/image-product-mobile.jpg) !important;
+    width: 100%;
+    background-size: cover;
+    height: 250px;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-color: #f4e9e3;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 40vw;
+    height: auto;
+    display: flex;
+    margin-inline: auto;
+    margin-top: 250px;
+  }
+
+  .imgDiv {
+    background-image: url(./images/image-product-desktop.jpg);
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 3/4;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .right-side {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    justify-content: space-between;
+  }
+}
