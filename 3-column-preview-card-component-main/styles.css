@@ -1,0 +1,92 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin-inline: auto;
+  align-items: center;
+  border-radius: 15px;
+  margin-block: 25px;
+}
+
+h2 {
+  font-family: "Big Shoulders Display";
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: "Lexend Deca";
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.orange,
+.teal,
+.green {
+  padding: 35px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.orange {
+  background-color: #e28524;
+  border-radius: 15px 15px 0 0;
+}
+
+.orange > button {
+  color: #e28524;
+}
+
+.teal {
+  background-color: #006a72;
+}
+
+.teal > button {
+  color: #006a72;
+}
+
+.green {
+  background-color: #00403f;
+  border-radius: 0 0 15px 15px;
+}
+
+.green > button {
+  color: #00403f;
+}
+
+button {
+  height: 40px;
+  width: 130px;
+  border-radius: 35px;
+  border: none;
+  font-weight: 800;
+}
+
+@media (min-width: 700px) {
+  .container {
+    flex-direction: row;
+    width: 90%;
+    min-height: 70vh;
+  }
+
+  .orange,
+  .teal,
+  .green {
+    border-radius: 0;
+    height: 50%;
+    flex-grow: 1;
+    max-width: 20vw;
+  }
+
+  .orange {
+    border-radius: 15px 0 0 15px;
+  }
+
+  .green {
+    border-radius: 0 15px 15px 0;
+  }
+}
